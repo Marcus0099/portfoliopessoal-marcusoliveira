@@ -1,0 +1,107 @@
+/* Removendo os padrões de margem, padding e colocando a fonte como monospace */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace
+}
+
+/* Estilizando o layout do contêiner principal */
+/* Como a ideia é mostrar apenas o menu, eu centralizei na tela */
+.container {
+    display: flex;
+    font-size: 18px;
+    height: 100vh;
+    background-color: #121212;
+}
+
+/* Uma pequena estilização da barra de navegação */
+.navbar{
+    margin: auto;
+    padding: 0.5rem 1.5rem;
+    background: #4F4F4F;
+    border-radius: 25px;
+}
+
+/* Estilizando o menu dentro da barra de navegação */
+.nav-menu{
+    display: flex;
+    gap: 5rem;
+}
+
+/* Estilizando as opções de navegação */
+.nav-opcao{
+    position: relative;
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Removendo o sublinhado das opções */
+/* Usei o "currentColor" para que a cor ficasse igual a cor atual do elemento */
+.nav-opcao span{
+    text-decoration: none;
+    color: currentColor;
+}
+
+/* Estilizando o menu dropdown */
+.drop-down{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0.5rem 0;
+    background-color: #4F4F4F;
+    color: #121212;
+    border-radius: 15px;
+    font-size: 16px;
+    display: none; /* Isso aqui é pra ocultar o menu (dropdown) */
+}
+
+/* Efeito de hover que vai ativar o dropdown */
+.nav-opcao:hover .drop-down{
+    display: block;
+}
+
+/* Esse hover altera a cor do texto e de fundo, também vai criar uma borda por onde o cursor do mouse passar */
+.nav-opcao:hover{
+    background-color: #121212;
+    color: #FFFF;
+    border-radius: 25px;
+}
+
+/* Estilizando a lista do menu dropdown */
+.drop-down li{
+    list-style: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* Um hover semelhante ao anterior, cores de texto e fundo são alteraddas, e também cria uma borda */
+.drop-down li:hover{
+    background: #121212;
+    color: #FFF;
+    border-radius: 25px;
+}
+
+/* Estilo do rodapé da página */
+footer{
+    font-size: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 5px;
+    left: 0px;
+}
+
+/* Efeito de transição colocado no link do rodapé para mudar sua cor */
+footer a.retornar{
+    color: #FFF;
+    transition: color 1.5s ease, box-shadow 1.5s ease;
+    text-decoration: none;
+}
+
+/* Efeito colocado no rodapé da página para dar um foco melhor nele ao passar o cursor */
+footer a.retornar:hover{
+    font-weight: bold;
+}

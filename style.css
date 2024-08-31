@@ -1,0 +1,207 @@
+/* Escolhi deixar a página em tons de preto e verde para dar uma diferenciada no visual */
+/* Também vai dar pra notar alguns leves efeitos de hover e transição em algumas sessões */
+
+/* Removendo os padrões de margem, padding e bordas */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o body com a fonte monoscape, espaçamento entre as linhas, cor da fonte e cor de fundo */
+body{
+    font-family: monospace;
+    line-height: 1.6;
+    color: #00FF00;
+    background-color: #000000;
+}
+
+/* Definindo a cor do texto do cabeçalho e o seu padding */
+header{
+    color: #00FF00;
+    padding: 1rem 0;
+}
+
+/* Removendo os marcadores das listas, e também dando uma ajustada melhor no conteúdo */
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Colocando um espaçamento entre as linhas */
+nav ul li{
+    margin: 0 35px;
+}
+
+/* Definindo a cor dos links e sua estilização */
+nav ul li a{
+    color: #00FF00;
+    text-decoration: none;
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+
+/* Adicionando um efeito de hover nos links */
+nav ul li a:hover{
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    color: #00FF00;
+}
+
+/* Definindo o preenchimento, largura máxima e a margem da seção principal */
+main{
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Definindo a cor, margem e centralizando o texto do h1 */
+h1{
+    color: #00FF00;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Adicionando uma margem aos parágrafos */
+p{
+    margin-bottom: 1rem;
+}
+
+/* Aqui tem alguns estilos específicos para cada página */
+/* Nas "boas-vindas", o texto foi centralizado e o tamanho da fonte e o padding foram alterados */
+.boas-vindas{
+    text-align: center;
+    font-size: 17px;
+    padding: 5px;
+}
+
+/* Aqui também, mas ao invés de centralizar o texto, ele está justificado na página */
+.sobre-mim{
+    text-align: justify;
+    font-size: 17px;
+}
+
+/* Em "formação", só foi alterado o tamanho da fonte */
+.formacao{
+    font-size: 17px;
+}
+
+/* O mesmo vale para isso aqui, deixei cada um separado para ficar mais fácil de ver */
+.portfolio{
+    font-size: 17px;
+}
+
+/* Em "contato", tem uma centralização no texto, o tamanho da fonte é um pouco menor e ela está em negrito */
+.form-contato{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Alinhando a imagem na página */
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Definindo a cor do texto do link de visualização dos projetos e remoção do sublinhado */
+.ver-projeto{
+    color: #00FF00;
+    text-decoration: none;
+}
+
+/* Um leve efeito ao passar o mouse sobre os links de visualização dos projetos */
+.ver-projeto:hover{
+    font-weight: bold;
+    font-size: 20px;
+    transition: font-size 0.3s ease;
+}
+
+/* Aqui está a estilização do formulário */
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Definindo uma margem inferior ao formulário e mudando o texto para negrito */
+form label{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* "input" e "textarea" tão com uma estilização bem semelhante */
+/* Separei os dois para ficar mais fácil de visualizar */
+form input{
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #00FF00;
+    border-radius: 4px;
+    background-color: #000000;
+    color: #00FF00;
+    font-family: monospace;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    outline: none;
+}
+
+/* Assim como "input:hover" e "textarea:hover" */
+form input:hover{
+    color: #00FF00;
+    text-shadow: 0 0 5px #00FF00;
+    box-shadow: 0 0 10px #00FF00;
+}
+
+/* Definindo o padding, margens e bordas, assim como a fonte e a cor, além de uma leve transição */
+form textarea{
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #00FF00;
+    border-radius: 4px;
+    background-color: #000000;
+    color: #00FF00;
+    font-family: monospace;
+    resize: none;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    outline: none;
+}
+
+/* Mudando a cor, sombra do texto e da box */
+form textarea:hover{
+    color: #00FF00;
+    text-shadow: 0 0 5px #00FF00;
+    box-shadow: 0 0 10px #00FF00;
+}
+
+/* Alterando o padding, largura e altura do botão. Mudei as cores do botão e adicionei uma transição leve */
+form button{
+    padding: 0;
+    width: 100px;
+    height: 40px;
+    background-color: #000000;
+    color: #00FF00;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    border: 2px solid #00FF00;
+    font-family: monospace;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Também coloquei uns efeitos de hover */
+form button:hover{
+    background-color: #00FF00;
+    border-color: #00FF00;
+    color: #000000;
+    box-shadow: 0 0 10px #00FF00;
+}
+
+/* Aqui é o estilo do footer */
+footer{
+    color: #00FF00;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

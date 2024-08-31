@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title> <!-- Título que vai ser exibido na aba do navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Chamando o CSS que vai estilizar a página -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!-- Barra de navegação com os tópicos: Início; Sobre Mim; Formação; Portfólio e Contato -->
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobremim.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Aqui tem um formulário de contato com campos para nome, e-mail e mensagem -->
+        <h1 class="contato">Você pode entrar em contato comigo por aqui:</h1>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit" onclick="return false;">Enviar</button>
+            <!-- Aqui no botão eu coloquei um "return false" para que o envio não seja feito, pelo que entendi do trabalho, optei por fazer assim -->
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Meu Portfólio Pessoal</p>
+    </footer>
+</body>
+</html>

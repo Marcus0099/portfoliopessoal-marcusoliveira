@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 1</title> <!-- Título que vai ser exibido na aba do navegador -->
+    <link rel="stylesheet" href="projeto1cad.css"> <!-- Chamando o CSS que vai estilizar a página -->
+</head>
+<body>
+    <!-- Abaixo eu defini algumas classes para estilização depois -->
+    <div id="cadastro">
+        <div class="caixa">
+            <div class="logo">
+                LOGO
+            </div>
+            <h1>CADASTRO</h1>
+            <div class="name">
+                <input type="text" placeholder="Nome" required>
+            </div>
+            <div class="email">
+                <input type="email" placeholder="E-mail" required>
+            </div>
+            <div class="senha">
+                <input type="password" placeholder="Senha" required>
+            </div>
+            <div class="senha">
+                <input type="password" placeholder="Confirme sua senha" required>
+            </div>
+            <div class="criar">
+                <p>Já possui uma conta? <a href="projeto1.html"> Clique aqui.</a></p>
+                <!-- Em "Clique aqui" tem um Link para a página de login -->
+                <button type="button" onclick="return false;">Criar Conta</button>
+                <!-- Também tem um "return false" no botão daqui -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <!-- Aqui também tem um rodapé com um link pra te redirecionar para o portfólio -->
+        <p><a href="portfolio.html" class="retornar"> > Voltar ao Portfólio < </a></p>
+    </footer>
+</body>
+</html>

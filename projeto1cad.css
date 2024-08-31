@@ -1,0 +1,134 @@
+/* Esse aqui não tá muito diferente da página de login */
+/* Optei por separar um CSS para o login e um para o cadastro */
+
+/* Aqui vão os estilos de fonte, cor de fundo e alguns ajustes */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #979797;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo dos links */
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* Estilização do contêiner de cadastro */
+#cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilo do input de nome */
+.name input{
+    border-radius: 30px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #585858;
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+/* Estilo do input de email */
+.email input{
+    border-radius: 30px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #585858;
+    color: #FFF;
+}
+
+/* Estilo do input de senha */
+.senha input{
+    border-radius: 30px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #585858;
+    color: #FFF;
+    margin-top: 15px;
+}
+
+/* Estilização do botão Criar Conta */
+.criar button{
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    padding: 0;
+    border: none;
+    background-color: #585858;
+    color: #FFF;
+}
+
+/* Estilo do placeholder dos campos de entrada */
+input::placeholder{
+    color: #FFF;
+}
+
+/* Estilo do cabeçalho h1 */
+h1{
+    color: #FFF;
+}
+
+/* Estilo do contêiner da caixa de cadastro */
+.caixa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px;
+
+}
+
+/* Estilo do círculo que simula o logo */
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #585858;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos campos de entrada em foco, removi aquela linha de foco */
+input:focus{
+    outline: none;
+}
+
+/* Estilo do rodapé da página */
+footer{
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0px;
+}
+
+/* Efeito de transição colocado no link do rodapé para mudar sua cor */
+footer a.retornar{
+    transition: color 1.5s ease, box-shadow 1.5s ease;
+}
+
+/* Efeito colocado no rodapé da página para dar um foco melhor nele ao passar o cursor */
+footer a.retornar:hover{
+    color: #585858;
+    font-weight: bold;
+}
